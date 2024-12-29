@@ -46,7 +46,7 @@ function page (){
           <div className='h-[200px] mt-[180px] w-[640px] top-[1000px]'>
             <div className='text-center content-center'>
             <h1 className='text-[#4a54e5] content-center'><GiLobArrow className='w-[40px] h-[40px] ml-80'/>
-            <p className='text-black text-[10px] mt-5'>WE Can't WAIT TO MEET YOU</p>
+            <p className='text-black text-[10px] mt-5'>WE Cant WAIT TO MEET YOU</p>
             <p className='text-black text-[20px] font-bold mt-3'>Lets Talk</p>
             </h1>
             </div>
