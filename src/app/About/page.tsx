@@ -15,9 +15,9 @@ import pic4 from "../About/pic4.png";
 function page (){
     return(
         <>
-        <div className="container bg-[#fafafa] mx-auto h-[1600px] w-[650px]">
+        <div className="container bg-[#fafafa] h-[1650px] w-full">
             {/*SECTION-1*/}
-            <div className="h-auto lg:h-[729px] w-full lg:w-[853px] bg-framel-color flex flex-col lg:flex-row items-center lg:items-start bg-slate-100">
+            <div className="h-auto lg:h-[900px] w-full lg:w-[1440px] bg-framel-color flex flex-col lg:flex-row items-center lg:items-start bg-slate-100">
             <div className="flex gap-10 mt-[80px]">
                <h1 className="text-[0.875rem] font-semibold uppercase text-black">ABOUT COMPANY
                <h2 className="text-black ml-[5px] mt-5 text-3x1 font-semibold">About us</h2>

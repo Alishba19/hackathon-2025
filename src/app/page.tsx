@@ -19,7 +19,7 @@ import pic3 from "../app/pic3.png";
 export default function Home() {
   return (
     <>
-    <div className="w-[630px] h-[2500px] bg-[#FAFAFA]">
+    <div className="w-full h-[2600px] bg-[#FAFAFA]">
       {/*SECTION-1*/}
       <div className="flex">
       <Image className="h-auto w-full lg:h-[800px] lg:w-[800px]" src={col} alt='image'/>
@@ -78,7 +78,7 @@ export default function Home() {
             <p className="text-white text-[10px]">$16.48</p><p className="text-[10px] mt-3 h-9 w-20 border-[1px] font-semibold ">ADD TO CART</p>
             </h1>
           <div>
-           <Image className="h-auto w-full lg:h-[1000px] lg:w-[853px]" src={produce} alt='Rocket single seater'/>
+           <Image className="h-auto w-full lg:h-[600px] lg:w-[600px]" src={produce} alt='Rocket single seater'/>
           </div>
         </div>
       </div>

@@ -13,9 +13,9 @@ import pic4 from "../Contact/pic4.png";
 function page (){
     return(
         <>
-        <div className="container bg-white mx-auto h-[900px] w-[1440px] main-color">
+        <div className="container bg-white mx-auto h-[930px] w-[1400px] main-color">
             {/*SECTION-1*/}
-            <div className="h-auto lg:h-[900px] w-full lg:w-[1440px] bg-frame1-color flex flex-col lg:flex-row items-center lg:items-start">
+            <div className="h-auto lg:h-[900px] w-full lg:w-[1300px] bg-frame1-color flex flex-col lg:flex-row items-center lg:items-start">
              <div className='flex gap-4 mt-[80px]'>
               <h1 className="text-black mt-5 text-[25px] font-semibold px-4 ml-[5px]">Get in touch today!
               <p className="text-[10px] text-[#767474] mt-5 font-semibold scale-95">We know how large objects will act,<br/>but things on a small scale</p>
