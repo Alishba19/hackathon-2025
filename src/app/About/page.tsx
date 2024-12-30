@@ -15,7 +15,7 @@ import pic4 from "../About/pic4.png";
 function page (){
     return(
         <>
-        <div className="container bg-[#fafafa] h-[1650px] w-full">
+        <div className="container bg-[#fafafa] h-[2500px] w-full">
             {/*SECTION-1*/}
             <div className="h-auto lg:h-[900px] w-full lg:w-[1440px] bg-framel-color flex flex-col lg:flex-row items-center lg:items-start bg-slate-100">
             <div className="flex gap-10 mt-[80px]">

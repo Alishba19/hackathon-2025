@@ -19,7 +19,7 @@ import pic3 from "../app/pic3.png";
 export default function Home() {
   return (
     <>
-    <div className="w-full h-[2600px] bg-[#FAFAFA]">
+    <div className="w-full h-[3500px] bg-[#FAFAFA]">
       {/*SECTION-1*/}
       <div className="flex">
       <Image className="h-auto w-full lg:h-[800px] lg:w-[800px]" src={col} alt='image'/>
@@ -77,16 +77,16 @@ export default function Home() {
             <p className="text-white text-[10px]">We know how large objects will act, We know how<br/> are objects will act, We know</p>
             <p className="text-white text-[10px]">$16.48</p><p className="text-[10px] mt-3 h-9 w-20 border-[1px] font-semibold ">ADD TO CART</p>
             </h1>
-          <div>
-           <Image className="h-auto w-full lg:h-[600px] lg:w-[600px]" src={produce} alt='Rocket single seater'/>
+          <div className="mt-8">
+           <Image className="h-[200px] w-full lg:h-[600px] lg:w-[600px]" src={produce} alt='Rocket single seater'/>
           </div>
         </div>
       </div>
 
       {/*SECTION-5*/}
-      <div className="h-[350px] w-[800px]">
+      <div className="h-[300px] w-[800px]">
           <div className="flex">
-            <Image className="h-[300px] w-[300px]" src={man} alt="Asgaarf Sofa" />
+            <Image className="h-[250px] w-[250px]" src={man} alt="Asgaarf" />
             <div className="mt-40 ml-19">
             <h1 className="text-[#928e8e] text-[10px]">SUMMER 2020</h1>
             <p className="text-black text-[20px] font-bold ml-14">Part of the Neural<br/>Universe</p>

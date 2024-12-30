@@ -13,7 +13,7 @@ import pic4 from "../Contact/pic4.png";
 function page (){
     return(
         <>
-        <div className="container bg-white mx-auto h-[930px] w-[1400px] main-color">
+        <div className="container bg-white mx-auto h-[2000px] w-[1400px] main-color">
             {/*SECTION-1*/}
             <div className="h-auto lg:h-[900px] w-full lg:w-[1300px] bg-frame1-color flex flex-col lg:flex-row items-center lg:items-start">
              <div className='flex gap-4 mt-[80px]'>
