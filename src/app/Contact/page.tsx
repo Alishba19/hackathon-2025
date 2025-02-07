@@ -1,62 +1,52 @@
-import React from "react";
+import React from "react"; 
 import Image from "next/image";
 import pic1 from "../Contact/pic1.png";
 import { CiTwitter } from "react-icons/ci";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { GiLobArrow } from "react-icons/gi";
 import pic2 from "../Contact/pic2.png";
 import pic3 from "../Contact/pic3.png";
 import pic4 from "../Contact/pic4.png";
 
-function page (){
-    return(
-        <>
-        <div className="container bg-white mx-auto h-[1300px] w-[1400px] main-color">
-            {/*SECTION-1*/}
-            <div className="h-auto lg:h-[500px] w-full lg:w-[1300px] bg-frame1-color flex flex-col lg:flex-row items-center lg:items-start">
-             <div className='flex gap-4 ml-44 mt-[80px]'>
-              <h1 className="text-black mt-5 text-[25px] font-semibold px-4 ml-[5px]">Get in touch today!
-              <p className="text-[10px] text-[#767474] mt-5 font-semibold scale-95">We know how large objects will act,<br/>but things on a small scale</p>
-              <p className='text-[15px] mt-5 font-semibold scale-95' >Phone: +451 215 215 </p>
-              <p className='text-[15px] mt-1 font-semibold scale-95'>Fax: +451 215 215</p>
-              <p className='flex mt-4 gap-2'><CiTwitter/><FaFacebookF/><FaInstagram/><FaLinkedin/></p>
-              </h1>      
-             <div>
-               <Image className="h-auto ml-28 w-full lg:h-[440px] lg:w-[387px]" src={pic1} alt='Get in touch today!'/>
-             </div>
+function Page() {
+    return (
+        <div className="bg-white w-full main-color py-10 px-4 lg:px-20">
+            {/* SECTION-1 */}
+            <div className="flex ml-28 flex-col lg:flex-row items-center bg-frame1-color p-6 lg:p-10 rounded-lg">
+                <div className='flex flex-col gap-4 text-center lg:text-left'>
+                    <h1 className="text-black text-2xl font-semibold">Get in touch today!</h1>
+                    <p className="text-sm text-[#212121] font-semibold">We know how large objects will act, but things on a small scale</p>
+                    <p className='text-lg text-[#212121] font-semibold'>Phone: +451 215 215 </p>
+                    <p className='text-lg text-[#212121] font-semibold'>Fax: +451 215 215</p>
+                    <div className='flex justify-center lg:justify-start gap-3 text-[#212121] text-xl'>
+                        <CiTwitter /> <FaFacebookF /> <FaInstagram /> <FaLinkedin />
+                    </div>
+                </div>
+                <div className="mt-6 lg:mt-0 lg:ml-10">
+                    <Image className="w-full max-w-xs lg:max-w-md" src={pic1} alt='Get in touch today!' />
+                </div>
             </div>
-          </div>
 
-           {/*SECTION-2*/}
-           <div className='h-[200px] mt-10 ml-72 w-[630px] top-[1000px]'>
-           <div  className="text-center content-center">
-            <h1 className='text-black  mt-5 text-[10px]'>VISIT OUR OFFICE</h1>
-            <p className='text-black text-[25px] font-bold mt-15'>We help small businesses<br/>with big ideas</p>
-           </div>
-           <div className="flex gap-3 ml-9 mt-14">
-             <Image className="h-[300px] w-[250px]" src={pic2} alt='Image'/>
-             <Image className="h-[300px] w-[250px]" src={pic3} alt='Image'/>
-             <Image className="h-[300px] w-[250px]" src={pic4} alt='Image'/>
-           </div>
-          </div>
+            {/* SECTION-2 */}
+            <div className='text-center py-16'>
+                <h1 className='text-black text-sm font-semibold'>VISIT OUR OFFICE</h1>
+                <p className='text-black text-2xl font-bold mt-2'>We help small businesses with big ideas</p>
+                <div className="flex flex-wrap justify-center gap-6 mt-10">
+                    {[pic2, pic3, pic4].map((pic, index) => (
+                        <Image key={index} className="h-60 w-52 rounded-lg" src={pic} alt='Office' />
+                    ))}
+                </div>
+            </div>
 
-          {/*LAST SECTION*/}
-          <div className='h-[200px] mt-72 ml-72 w-[640px] top-[1000px]'>
-            <div className='text-center content-center'>
-            <h1 className='text-[#4a54e5] content-center'><GiLobArrow className='w-[40px] h-[40px] ml-80'/>
-            <p className='text-black text-[15px] mt-5'>WE Cant WAIT TO MEET YOU</p>
-            <p className='text-black text-[25px] font-bold mt-3'>Lets Talk</p>
-            </h1>
+            {/* LAST SECTION */}
+            <div className='text-center py-16'>
+                <GiLobArrow className='w-10 h-10 text-[#4a54e5] mx-auto' />
+                <p className='text-black text-lg mt-5'>WE CAN'T WAIT TO MEET YOU</p>
+                <p className='text-black text-2xl font-bold mt-2'>Let's Talk</p>
+                <button className='mt-5 px-6 py-2 border border-black text-black hover:bg-blue-500 transition'>Try it free now</button>
             </div>
-            <div className='flex ml-72'>
-            <button className='h-9 w-25 border-[1px] border-black text-black mt-5 text-center content-center hover:bg-blue-500'>try it fee now</button>
-            </div>
-          </div>
         </div>
-        </>
-    )
+    );
 }
 
-export default page
+export default Page;
